@@ -13,6 +13,7 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
+	/*Color de letra dentro del boton*/
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
@@ -27,7 +28,9 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  
+  /*color de fondo de la página*/
+  background-color: #23b2b2;
 }
 body {
   color: #fff;
