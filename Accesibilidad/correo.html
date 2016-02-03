@@ -95,11 +95,29 @@
 
 
           <div class="inner cover">
-            <h1 class="cover-heading">Contacto</h1>
-			<a href="http://www.facebook.com"> <img src="images/face.png"> </a>
-			<a href="correo.html"> <img src="images/correo.jpe"> </a>
+            
 			
-			
+			<form name="form1" method="post" action="mailto:contacto@lineadecodigo.com">                
+			  <div class="formulario">
+				<div class="column">
+				   <label for="nombre">Nombre <span>(requerido)</span></label>
+				   <input type="text" name="nombre" class="form-input"/>
+	 
+				   <label for="email">Email <span>(requerido)</span></label>
+				   <input type="email" name="email" class="form-input" />
+	 
+				   <label for="asunto">Asunto</label>
+				   <input type="text" name="asunto" class="form-input" />
+				</div>
+	 
+				<div class="column">
+					<label for="mensaje">Mensaje <span>(requerido)</span></label>
+					<textarea name="mensaje" class="form-input"></textarea>
+				</div>                
+	 
+				   <input class="btn btn-lg btn-inf" type="submit" value="Enviar Mensaje" />
+			   </div>        
+		   </form>
 			
           </div>
 
