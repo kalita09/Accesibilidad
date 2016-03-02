@@ -1,6 +1,11 @@
 //Peticiones de Layers WMS
 //var geoserver = "http://geovision.uned.ac.cr/geoserver";
 
+
+
+//Peticiones de Layers WMS
+//var geoserver = "http://geovision.uned.ac.cr/geoserver";
+
 var Layers = {
 
 	osm: new OpenLayers.Layer.OSM(
@@ -70,9 +75,9 @@ Layers.urbano.BBOX = new OpenLayers.Bounds(-84.066, 9.922, -83.957, 9.958);
 
 };
 
-//Layers.montesdeoca.META = "http://geovision.uned.ac.cr/geonetwork/srv/spa/search#|899c30f5-5061-44df-aea6-04067c5c3dd1";
-//Layers.vias.META = "http://geovision.uned.ac.cr/geonetwork/";
-//Layers.urbano.META = "http://geovision.uned.ac.cr/geonetwork/";
+Layers.montesdeoca.META = "http://geovision.uned.ac.cr/geonetwork/srv/spa/search#|899c30f5-5061-44df-aea6-04067c5c3dd1";
+Layers.vias.META = "http://geovision.uned.ac.cr/geonetwork/";
+Layers.urbano.META = "http://geovision.uned.ac.cr/geonetwork/";
 
 var layers = [Layers.osm, Layers.montesdeoca, Layers.urbano, Layers.vias];
 
