@@ -20,7 +20,7 @@
                     controls: [],
                     maxExtent: bounds,
                     maxResolution: 46.73014609374991,
-                    projection: "EPSG:4858",
+                    projection: "EPSG:5367",
                     units: 'm'
                 };
                 map = new OpenLayers.Map('map', options);
@@ -37,7 +37,7 @@
                         buffer: 0,
                         displayOutsideMaxExtent: true,
                         isBaseLayer: true,
-                        yx : {'EPSG:4858' : true}
+                        yx : {'EPSG:5367' : true}
                     } 
                 );
             
@@ -53,7 +53,7 @@
                        singleTile: true, 
                        ratio: 1, 
                        isBaseLayer: true,
-                       yx : {'EPSG:4858' : true}
+                       yx : {'EPSG:5367' : true}
                     } 
                 );
         
