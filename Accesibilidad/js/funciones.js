@@ -1,4 +1,4 @@
-            function init(){
+  function init(){
                 // if this is just a coverage or a group of them, disable a few items,
                 // and default to jpeg format
                 format = 'image/png';
@@ -23,9 +23,16 @@
                     projection: "EPSG:5367",
                     units: 'm'
                 };
+				
+				
+				
+				
+				
+				
                 map = new OpenLayers.Map('map', options);
             
                 // setup tiled layer
+				
                 tiled = new OpenLayers.Layer.WMS(
                     "Accesibilidad:LIMITE_CANTONAL - Tiled", "http://localhost:8080/geoserver/Accesibilidad/wms",
                     {
@@ -42,6 +49,7 @@
                 );
             
                 // setup single tiled layer
+				
                 untiled = new OpenLayers.Layer.WMS(
                     "Accesibilidad:LIMITE_CANTONAL - Untiled", "http://localhost:8080/geoserver/Accesibilidad/wms",
                     {
@@ -57,9 +65,11 @@
                     } 
                 );
         
+				
                 map.addLayers([untiled, tiled]);
 
                 // build up all controls
+				
                 map.addControl(new OpenLayers.Control.PanZoomBar({
                     position: new OpenLayers.Pixel(2, 15)
                 }));
@@ -67,7 +77,7 @@
                 map.addControl(new OpenLayers.Control.Scale($('scale')));
                 map.addControl(new OpenLayers.Control.MousePosition({element: $('location')}));
                 map.zoomToExtent(bounds);
-                
+                map.addControl(new OpenLayers.Control.LayerSwitcher()); 
                 // wire up the option button
                 var options = document.getElementById("options");
                 options.onclick = toggleControlPanel;
