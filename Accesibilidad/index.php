@@ -44,7 +44,7 @@
 						<div class="navbar-header">
 									  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
+										<span class="icon-bar">dfd</span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										
@@ -57,19 +57,30 @@
 						<div id="navbar" class="navbar-collapse collapse">
 									
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Inicio</a></li>
-								<li><a href="acerca.html">Acerca de</a></li>
-								<li><a href="contacto.html">Contacto</a></li>
+								<li class="active"><a href="index.php">Inicio</a></li>
+								<li><a href="acerca.php">Acerca de</a></li>
+								<li><a href="contacto.php">Contacto</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="#">Consultar</a></li>
-										<li><a href="#">Denunciar</a></li>
+										<li><a href="denunciar.php">Denunciar</a></li>
 										<li><a href="#">Ayuda</a></li>
 									</ul>
 								</li>
+								<form action="login.php" method="POST" class="navbar-form navbar-right">
+		                    		<div class="form-group">
+		                      			<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
+		                    		
+		                    		
+		                      			<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
+		                    		
+		                    		<button type="submit" class="btn btn-success">Entrar</button>
+		                    		</div>
+		                  		</form>
+
 							</ul>
-						  
+ 
 						</div>
 					</div>
 				</nav>

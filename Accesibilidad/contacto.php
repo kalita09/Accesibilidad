@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Acerca de</title>
+    <title>Contacto</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +38,7 @@
   
   
 
+		
 		
 		
 <!-- Barra de navegación -->
@@ -73,16 +74,16 @@
 										<li><a href="#">Ayuda</a></li>
 									</ul>
 								</li>
-                <form action="login.php" method="POST" class="navbar-form navbar-right">
-                <div class="form-group">
-                    <input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
-                
-                
-                    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
-                
-                <button type="submit" class="btn btn-success">Entrar</button>
-                </div>
-              </form>
+								<form action="login.php" method="POST" class="navbar-form navbar-right">
+		                    		<div class="form-group">
+		                      			<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
+		                    		
+		                    		
+		                      			<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
+		                    		
+		                    		<button type="submit" class="btn btn-success">Entrar</button>
+		                    		</div>
+		                  		</form>
 							</ul>
 						  
 						</div>
@@ -92,6 +93,7 @@
 			</div>
 		</div>
 		<!-- Fin Barra de navegación -->
+  
   
   
   
@@ -107,15 +109,15 @@
 
 
           <div class="inner cover">
-            <h1 class="cover-heading">Acerca de</h1>
+            <h1 class="cover-heading">Contacto</h1>
+			<a href="https://www.facebook.com/MontesdeOcaAccesible"> <img src="images/face.png" width="100" height="100"> </a>
+			<a href="correo.php"> <img src="images/carta.png" width="100" height="100"> </a>
+			<a href="correo.php"> <img src="images/telefono.png" width="100" height="100"> </a>
+			
 			
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
+          
 
         </div>
 
