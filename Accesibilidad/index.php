@@ -36,27 +36,25 @@
 	<body>
 	<div class="container">
 		<!-- Barra de navegación -->
-		<div class="navbar-wrapper">
-			<div class="container">
-
-				<nav class="navbar navbar-inverse navbar-static-top">
+		
+				<nav class="navbar navbar-inverse navbar-fixed-top">
 					<div class="container">
 						<div class="navbar-header">
 									  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar">dfd</span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
-										
+										<span class="icon-bar"></span>	
 									  </button>
-									  <img src="images/logo.png" width="50" height="50">
 									  
-									  
-						</div>
-						
+									  <a href="index.php">
+									  <img src="images/logo.png" width="50" height="50">	
+									  </a>
+						</div>					
 						<div id="navbar" class="navbar-collapse collapse">
-									
+							<form class="navbar-form navbar-center">		
 							<ul class="nav navbar-nav">
+							
 								<li class="active"><a href="index.php">Inicio</a></li>
 								<li><a href="acerca.php">Acerca de</a></li>
 								<li><a href="contacto.php">Contacto</a></li>
@@ -68,33 +66,28 @@
 										<li><a href="#">Ayuda</a></li>
 									</ul>
 								</li>
+								</form>
+								<form class="navbar-form navbar-right">	
 								<form action="login.php" method="POST" class="navbar-form navbar-right">
 		                    		<div class="form-group">
 		                      			<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
-		                    		
-		                    		
 		                      			<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
-		                    		
 		                    		<button type="submit" class="btn btn-success">Entrar</button>
 		                    		</div>
 		                  		</form>
-
+								</form>
 							</ul>
- 
+							
+							
 						</div>
 					</div>
 				</nav>
 
 			</div>
-		</div>
+	</div>
 		<!-- Fin Barra de navegación -->
-		
-		
-  
-		
 
 			<div class="site-wrapper-inner">
-
 				<div class="cover-container">
 					<div class="container">
 						<div class="inner cover">
@@ -118,8 +111,7 @@
 										  <div class="container">
 										  <img class="first-slide" src="images/imagen_1.jpg" width="500" height="400" alt="First slide">
 											<div class="carousel-caption">
-											 
-											  
+											   
 											</div>
 										  </div>
 										</div>
@@ -158,16 +150,10 @@
 							<img src="images/mapa.png" width="60" height="50" alt="">
 							</button>
 														
-			
 							</p>
 						</div>
 					</div>
-										  
-											
-										
-										
-										
-										
+				
 					<!--Divisiones tres columnas -->					
 					<div class="container marketing">
 

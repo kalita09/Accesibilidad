@@ -42,13 +42,11 @@
 	    <?php
 	    	include('conexion.php');
 	        $id = $_GET['idMensaje'];
-	        $query = "SELECT * FROM mensajes WHERE Id='$id' ";
+	        $query = "SELECT * FROM mensajes WHERE Id='$id' ";   //POR SEGURIDAD ESTO HAY QUE CORREGIRLO Y QUITAR EL *
 	        $resultado=$conexion -> query($query);
 	    ?>
 
 
-
-		
 			<div class="container">
 				<!-- Barra de navegación -->
 				<div class="navbar-wrapper">
@@ -65,17 +63,12 @@
 												
 											  </button>
 											  <a class="navbar-brand" href="#"><?php echo "Bienvenido ".$_SESSION['Admin'];   ?></a>
-											  <img src="images/logo.png" width="50" height="50">
-											  
-											  
-											  
+											  <img src="images/logo.png" width="50" height="50">					  
 								</div>
 								
-								<div id="navbar" class="navbar-collapse collapse">
-											
+								<div id="navbar" class="navbar-collapse collapse">		
 									<ul class="nav navbar-nav">
 										<li class="active"><a href="HomeAdm.php">Inicio</a></li>
-										
 										<li class="dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ver<span class="caret"></span></a>
 											<ul class="dropdown-menu">
@@ -87,79 +80,43 @@
 										<form class="navbar-form navbar-right">
                         					<a href="cerrar.php" class="btn btn-primary" role ="button">Salir</a>
                         				</form>
-
 									</ul>
-		 
 								</div>
 							</div>
 						</nav>
-
 					</div>
 				</div>
 				<!-- Fin Barra de navegación -->
 				
-				
-		  
-				
-
 					<div class="site-wrapper-inner">
-
 						<div class="cover-container">
 							<div class="container">
 								<div class="inner cover">
 									<h1 class="cover-heading">Mensajes</h1>
-
-
-
-
-
 										<div class="table-responsive">
-					                        <table class="table table-striped">
-					                   
+					                        <table class="table table-striped">             
 					                            <?php while($row=$resultado->fetch_assoc()){ ?>
-					                              
 					                                        <?php echo $row['Mensaje'];?>
 					                             <br>
-					                             
-					                                        <?php echo '<img src="'.$row['foto'].'"><br>'        ;?>
-					                                
-					                             
-					                            <?php } ?>
-					                       
+					                                        <?php echo '<img src="'.$row['foto'].'"><br>'        ;?>        
+					                            <?php } ?>                
 					                    </table>
 					                    <a href="mensajes.php" class="btn btn-primary" role ="button">Regresar</a>
-                				 		</div>
-
-						
-									
-										  
-																
-					
-									
+                				 		</div>	
 								</div>
 							</div>
-												  
-													
-												
-												
-												
-							
-
 						</div>
 					</div>
 				<!-- FOOTER -->
 				<footer>
 					<p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 				</footer>
-
 			</div>
-
+			
 	     <?php   }else{
-
 	        header("Location: index.php");
-
-
 	      } ?>
+		  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -168,6 +125,5 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-	
 	</body>
 </html>

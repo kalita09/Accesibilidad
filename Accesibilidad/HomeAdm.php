@@ -41,7 +41,6 @@
 				<!-- Barra de navegación -->
 				<div class="navbar-wrapper">
 					<div class="container">
-
 						<nav class="navbar navbar-inverse navbar-static-top">
 							<div class="container">
 								<div class="navbar-header">
@@ -49,18 +48,13 @@
 												<span class="sr-only">Toggle navigation</span>
 												<span class="icon-bar">dfd</span>
 												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												
+												<span class="icon-bar"></span>	
 											  </button>
 											  <a class="navbar-brand" href="#"><?php echo "Bienvenido ".$_SESSION['Admin'];   ?></a>
-											  <img src="images/logo.png" width="50" height="50">
-											  
-											  
-											  
+											  <img src="images/logo.png" width="50" height="50">			  
 								</div>
 								
-								<div id="navbar" class="navbar-collapse collapse">
-											
+								<div id="navbar" class="navbar-collapse collapse">		
 									<ul class="nav navbar-nav">
 										<li class="active"><a href="HomeAdm.php">Inicio</a></li>
 										
@@ -75,9 +69,7 @@
 										<form class="navbar-form navbar-right">
                         					<a href="cerrar.php" class="btn btn-primary" role ="button">Salir</a>
                         				</form>
-
-									</ul>
-		 
+									</ul> 
 								</div>
 							</div>
 						</nav>
@@ -86,10 +78,6 @@
 				</div>
 				<!-- Fin Barra de navegación -->
 				
-				
-		  
-				
-
 					<div class="site-wrapper-inner">
 
 						<div class="cover-container">
@@ -149,7 +137,6 @@
 											</div><!-- /.carousel -->
 
 									<p class="lead">
-									
 									<button type="button" class="btn btn-lg btn-info" onClick="window.location.href='mapita.html'">
 									<!--Imagen de mapa en png transparente, botón que abre el visor de mapas -->
 									<img src="images/mapa.png" width="60" height="50" alt="">
@@ -158,19 +145,10 @@
 					
 									</p>
 								</div>
-							</div>
-												  
-													
-												
-												
-												
-												
+							</div>					  					
 							<!--Divisiones tres columnas -->					
 							<div class="container marketing">
-
-								<!-- Three columns of text below the carousel -->
 								<div class="row">
-								
 									<div class="col-lg-4">
 										<img class="img-circle" src="images/imagen_2.jpg" alt="Generic placeholder image" width="140" height="140">
 										<h2>Misión</h2>
@@ -190,20 +168,16 @@
 										<h2>Metas</h2>
 										<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 										<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-									</div><!-- /.col-lg-4 -->
-									
-								</div><!-- /.row -->
-													
+									</div><!-- /.col-lg-4 -->	
+								</div><!-- /.row -->						
 							</div>
 							<!--Divisiones tres columnas -->
-
 						</div>
 					</div>
-				<!-- FOOTER -->
+				<!-- FOOTER Etiqueta -->
 				<footer>
 					<p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 				</footer>
-
 			</div>
 
 	     <?php   }else{

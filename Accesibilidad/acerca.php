@@ -54,8 +54,9 @@
 										<span class="icon-bar"></span>
 										
 									  </button>
-									  <img src="images/logo.png" width="50" height="50">
-									  
+									  <a href="index.php">
+									  <img src="images/logo.png" width="50" height="50">	
+									</a>  
 									  
 						</div>
 						

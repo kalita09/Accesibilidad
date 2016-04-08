@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-	
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,22 +37,17 @@
 
 		<?php if(isset($_SESSION['Admin'])){ ?>
 
-
 		<?php
 		include('conexion.php');
         
-        $query = "SELECT * FROM mensajes ";
+        $query = "SELECT * FROM mensajes "; //POR SEGURIDAD ESTO HAY QUE CORREGIRLO Y QUITAR EL *
         $resultado=$conexion -> query($query);
         ?>
 
-
-
-		
 			<div class="container">
 				<!-- Barra de navegación -->
 				<div class="navbar-wrapper">
 					<div class="container">
-
 						<nav class="navbar navbar-inverse navbar-static-top">
 							<div class="container">
 								<div class="navbar-header">
@@ -65,10 +59,7 @@
 												
 											  </button>
 											  <a class="navbar-brand" href="#"><?php echo "Bienvenido ".$_SESSION['Admin'];   ?></a>
-											  <img src="images/logo.png" width="50" height="50">
-											  
-											  
-											  
+											  <img src="images/logo.png" width="50" height="50">	  
 								</div>
 								
 								<div id="navbar" class="navbar-collapse collapse">
@@ -87,40 +78,25 @@
 										<form class="navbar-form navbar-right">
                         					<a href="cerrar.php" class="btn btn-primary" role ="button">Salir</a>
                         				</form>
-
 									</ul>
-		 
 								</div>
 							</div>
 						</nav>
-
 					</div>
 				</div>
 				<!-- Fin Barra de navegación -->
 				
-				
-		  
-				
-
 					<div class="site-wrapper-inner">
-
 						<div class="cover-container">
 							<div class="container">
 								<div class="inner cover">
 									<h1 class="cover-heading">Mensajes</h1>
-
-
-
-
-
 										<div class="table-responsive">
 					                        <table class="table table-striped">
 					                        <thead>
 					                            <tr>
 					                                <td><b>Id</b></td>
-					                                <td><b>Asunto</b></td>
-					                          
-					                          
+					                                <td><b>Asunto</b></td>  
 					                            </tr>
 					                        </thead>
 					                        <tbody>
@@ -132,47 +108,26 @@
 					                                    <td>
 					                                        <?php echo $row['Asunto'];?>
 					                                    </td>
-					                                   
-
 					                                    <td>
-
 					                                        <a href="verMensaje.php?idMensaje=<?php echo $row['Id'];?>" role="button" class="label label-info" >Ver</a>
 					                                    </td>
 					                                </tr>
 					                            <?php } ?>
 					                        </tbody>
 					                    </table>
-                				 	</div>
-
-						
-									
-										  
-																
-					
-									
+                				 	</div>	
 								</div>
-							</div>
-												  
-													
-												
-												
-												
-							
-
+							</div>				
 						</div>
 					</div>
 				<!-- FOOTER -->
 				<footer>
 					<p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 				</footer>
-
 			</div>
 
 	     <?php   }else{
-
 	        header("Location: index.php");
-
-
 	      } ?>
     <!-- Bootstrap core JavaScript
     ================================================== -->
