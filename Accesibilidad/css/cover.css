@@ -36,6 +36,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  padding: 30px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -52,9 +53,13 @@ body {
   vertical-align: top;
 }
 .cover-container {
+  padding-right: 50px;/*Espacio del margen derecho  */
+  padding-left: 90px; /*Espacio del margen izquierdo*/
+  padding-top: 25px;  /*Espacio del margen superior */
   margin-right: auto;
   margin-left: auto;
 }
+
 
 /* Padding for spacing */
 .inner {

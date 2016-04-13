@@ -38,8 +38,9 @@
 		<!-- Barra de navegación -->
 		
 				<nav class="navbar navbar-inverse navbar-fixed-top">
-					<div class="container">
+					<div class="container-fixed-top">
 						<div class="navbar-header">
+							<form class="navbar-form">	
 									  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 										<span class="sr-only">Toggle navigation</span>
 										<span class="icon-bar"></span>
@@ -50,40 +51,42 @@
 									  <a href="index.php">
 									  <img src="images/logo.png" width="50" height="50">	
 									  </a>
+							</form>
 						</div>					
-						<div id="navbar" class="navbar-collapse collapse">
-							<form class="navbar-form navbar-center">		
-							<ul class="nav navbar-nav">
+						<div id="navbar" class="navbar-collapse">
+							<form class="navbar-form">		
+								<ul class="nav navbar-nav navbar-left">
 							
-								<li class="active"><a href="index.php">Inicio</a></li>
-								<li><a href="acerca.php">Acerca de</a></li>
-								<li><a href="contacto.php">Contacto</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Consultar</a></li>
-										<li><a href="denunciar.php">Denunciar</a></li>
-										<li><a href="#">Ayuda</a></li>
-									</ul>
-								</li>
-								</form>
-								<form class="navbar-form navbar-right">	
-								<form action="login.php" method="POST" class="navbar-form navbar-right">
+									<li class="active"><a href="index.php">Inicio</a></li>
+									<li><a href="acerca.php">Acerca de</a></li>
+									<li><a href="contacto.php">Contacto</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Consultar</a></li>
+											<li><a href="denunciar.php">Denunciar</a></li >
+											<li><a href="#">Ayuda</a></li>
+										</ul>
+									</li>
+								</ul>
+							</form>
+							
+							<form class="navbar-form"  action="login.php" method="POST" >	
+								<ul class="navbar-form navbar-right">
 		                    		<div class="form-group">
 		                      			<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
 		                      			<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
-		                    		<button type="submit" class="btn btn-success">Entrar</button>
+										<button type="submit" class="btn btn-success">Entrar</button>
 		                    		</div>
-		                  		</form>
-								</form>
-							</ul>
+								</ul>
+							</form>
 							
 							
 						</div>
 					</div>
 				</nav>
 
-			</div>
+
 	</div>
 		<!-- Fin Barra de navegación -->
 
