@@ -34,18 +34,19 @@
 	</head>
 
 	<body>
+	<div class="navbar-wrapper">
 	<div class="container">
 		<!-- Barra de navegación -->
 		
 				<nav class="navbar navbar-inverse navbar-fixed-top">
-					<div class="container-fixed-top">
+					<div class="container">
 						<div class="navbar-header">
-							<form class="navbar-form">	
+							
 									  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 										<span class="sr-only">Toggle navigation</span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>	
+										<span class="icon-bar"></span>
 									  </button>
 									  
 									  <a href="index.php">
@@ -53,8 +54,8 @@
 									  </a>
 							</form>
 						</div>					
-						<div id="navbar" class="navbar-collapse">
-							<form class="navbar-form">		
+						<div id="navbar" class="navbar-collapse collapse">
+								
 								<ul class="nav navbar-nav navbar-left">
 							
 									<li class="active"><a href="index.php">Inicio</a></li>
@@ -69,24 +70,27 @@
 										</ul>
 									</li>
 								</ul>
-							</form>
-							
-							<form class="navbar-form"  action="login.php" method="POST" >	
-								<ul class="navbar-form navbar-right">
-		                    		<div class="form-group">
-		                      			<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
-		                      			<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
-										<button type="submit" class="btn btn-success">Entrar</button>
-		                    		</div>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#" data-toggle="collapse" data-target="#formulario"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 								</ul>
-							</form>
-							
+								<div id="formulario" class="collapse">
+									<form  action="login.php" method="POST" >	
+										<ul class="navbar-form navbar-right">
+											<div class="form-group">
+												<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
+												<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
+												<button type="submit" class="btn btn-success">Entrar</button>
+												
+											</div>
+										</ul>
+									</form>
+								</div>
 							
 						</div>
 					</div>
 				</nav>
 
-
+	</div>
 	</div>
 		<!-- Fin Barra de navegación -->
 

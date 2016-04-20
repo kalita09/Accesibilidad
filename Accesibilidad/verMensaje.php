@@ -65,7 +65,6 @@
 											  <a class="navbar-brand" href="#"><?php echo "Bienvenido ".$_SESSION['Admin'];   ?></a>
 											  <img src="images/logo.png" width="50" height="50">					  
 								</div>
-								
 								<div id="navbar" class="navbar-collapse collapse">		
 									<ul class="nav navbar-nav">
 										<li class="active"><a href="HomeAdm.php">Inicio</a></li>

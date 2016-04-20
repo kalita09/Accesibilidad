@@ -32,101 +32,110 @@
     <![endif]-->
   </head>
 
-  <body>
-  
-  
-  
-  
-
+<body>
+	<div class="navbar-wrapper">
+	<div class="container">
+		<!-- Barra de navegación -->
 		
-		
-		
-  <div class="navbar-wrapper">
-      <div class="container">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							
+									  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									  </button>
+									  
+									  <a href="index.php">
+									  <img src="images/logo.png" width="50" height="50">	
+									  </a>
+							</form>
+						</div>					
+						<div id="navbar" class="navbar-collapse collapse">
+								
+								<ul class="nav navbar-nav navbar-left">
+							
+									<li class="active"><a href="index.php">Inicio</a></li>
+									<li><a href="acerca.php">Acerca de</a></li>
+									<li><a href="contacto.php">Contacto</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Consultar</a></li>
+											<li><a href="denunciar.php">Denunciar</a></li >
+											<li><a href="#">Ayuda</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#" data-toggle="collapse" data-target="#formulario"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+								</ul>
+								<div id="formulario" class="collapse">
+									<form  action="login.php" method="POST" >	
+										<ul class="navbar-form navbar-right">
+											<div class="form-group">
+												<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
+												<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
+												<button type="submit" class="btn btn-success">Entrar</button>
+												
+											</div>
+										</ul>
+									</form>
+								</div>
+							
+						</div>
+					</div>
+				</nav>
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">TCU Accesibilidad en Montes de Oca</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-  
-  
-  
-  
-  
-  
-
+	</div>
+	</div>
+	<!-- Fin Barra de navegación -->
+	
+	
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
-
         <div class="cover-container">
-
-
-
-          <div class="inner cover">
-            
-			
-			<form name="form1" method="post" action="mailto:contacto@lineadecodigo.com">                
+          <div class="inner cover">	
+	    	<form name="form1" method="post" action="mailto:contacto@lineadecodigo.com">                
 			  <div class="formulario">
-				<div class="column">
-				   <label for="nombre">Nombre <span>(requerido)</span></label>
-				   <input type="text" name="nombre" class="form-input"/>
-	 
-				   <label for="email">Email <span>(requerido)</span></label>
-				   <input type="email" name="email" class="form-input" />
-	 
+				<div class="row">
+				   <div class="col-md-3">
+				   <label for="nombre">Nombre</label>
+				   </div>
+				   <div class="col-md-7">
+				   <input type="text" name="nombre" class="form-control" style="color:black" required><br>
+				   </div>
+				   <div class="col-md-3">
+				   <label for="email">Email</label>
+				   </div>
+				   <div class="col-md-7">
+				   <input type="email" name="email" class="form-control"  style="color:black" required><br>
+				   </div>
+				   <div class="col-md-3">
 				   <label for="asunto">Asunto</label>
-				   <input type="text" name="asunto" class="form-input" />
+				   </div>
+				   <div class="col-md-7">
+				   <input type="text" name="asunto" class="form-control"  style="color:black" required><br>
+				   </div>
 				</div>
 	 
-				<div class="column">
-					<label for="mensaje">Mensaje <span>(requerido)</span></label>
-					<textarea name="mensaje" class="form-input"></textarea>
-				</div>                
-	 
-				   <input class="btn btn-lg btn-inf" type="submit" value="Enviar Mensaje" />
+				<div class="row">
+				    <div class="col-md-3">
+					<label for="mensaje">Mensaje</label>
+					</div>
+					<div class="col-md-7">
+					<textarea name="mensaje" class="form-control"  style="color:black" required></textarea><br>
+				    </div>
+				</div>            
+					<button type="submit" class="btn btn-success">Enviar Mensaje</button>
+				   <!--<input class="btn btn-success" type="submit" value="Enviar Mensaje" />-->
 			   </div>        
-		   </form>
-			
+		   </form>		
           </div>
-
-          
-
         </div>
-
       </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript

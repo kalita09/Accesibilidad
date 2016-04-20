@@ -34,88 +34,78 @@
 	</head>
 
 	<body>
+	<div class="navbar-wrapper">
 	<div class="container">
 		<!-- Barra de navegación -->
-		<div class="navbar-wrapper">
-			<div class="container">
-
-				<nav class="navbar navbar-inverse navbar-static-top">
+		
+				<nav class="navbar navbar-inverse navbar-fixed-top">
 					<div class="container">
 						<div class="navbar-header">
+							
 									  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar">dfd</span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
-										
+										<span class="icon-bar"></span>
 									  </button>
+									  
 									  <a href="index.php">
 									  <img src="images/logo.png" width="50" height="50">	
-										</a>  
-									  
-						</div>
-						
+									  </a>
+							</form>
+						</div>					
 						<div id="navbar" class="navbar-collapse collapse">
-									
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.php">Inicio</a></li>
-								<li><a href="acerca.php">Acerca de</a></li>
-								<li><a href="contacto.php">Contacto</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Consultar</a></li>
-										<li><a href="denunciar.php">Denunciar</a></li>
-										<li><a href="#">Ayuda</a></li>
-									</ul>
-								</li>
-								<form action="login.php" method="POST" class="navbar-form navbar-right">
-		                    		<div class="form-group">
-		                      			<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
-		                    		
-		                    		
-		                      			<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
-		                    		
-		                    		<button type="submit" class="btn btn-success">Entrar</button>
-		                    		</div>
-		                  		</form>
-
-							</ul>
- 
+								
+								<ul class="nav navbar-nav navbar-left">
+							
+									<li class="active"><a href="index.php">Inicio</a></li>
+									<li><a href="acerca.php">Acerca de</a></li>
+									<li><a href="contacto.php">Contacto</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Consultar</a></li>
+											<li><a href="denunciar.php">Denunciar</a></li >
+											<li><a href="#">Ayuda</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#" data-toggle="collapse" data-target="#formulario"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+								</ul>
+								<div id="formulario" class="collapse">
+									<form  action="login.php" method="POST" >	
+										<ul class="navbar-form navbar-right">
+											<div class="form-group">
+												<input type="text" name="usuario" id="inputUser" class="form-control" placeholder="usuario" required autofocus>
+												<input type="password" name="password" id="inputPassword" class="form-control" placeholder="password" required>
+												<button type="submit" class="btn btn-success">Entrar</button>
+												
+											</div>
+										</ul>
+									</form>
+								</div>
 						</div>
 					</div>
 				</nav>
-
-			</div>
-		</div>
+	</div>
+	</div>
 		<!-- Fin Barra de navegación -->
-		
-		
-  
-		
-
 			<div class="site-wrapper-inner">
-
 				<div class="cover-container">
 					<div class="container">
-
-					
-					
-						<div class="inner cover">
+					<div class="inner cover">
 							<h1 class="cover-heading">Haga su denuncia</h1>
 							<!-- Falta la direccion correcta del js -->
 							<script src="js/layers-accesibilidad.js"></script>
-						
-							
-						
-								<form method="post" action="recibirdenuncia.php" name="denuncia" enctype="multipart/form-data" >                
+							<form method="post" action="recibirdenuncia.php" name="denuncia" enctype="multipart/form-data" >                
 								 
 									<div class="row">
 										<div class="col-md-1">
 									   	Asunto
 									   	</div>
 									   <div class="col-md-4">
-									   <input type="text" name="asunto" class="form-control"/>
+									   <input type="text" name="asunto" class="form-control"required>
 									   </div>
 									</div> <br><br>
 									<div class="row">
@@ -123,7 +113,7 @@
 						 				Mensaje
 						 				</div>
 						 				<div class="col-md-4">
-										<textarea name="mensaje" class="form-control" rows="5" cols="50" maxlength="255"></textarea>
+										<textarea name="mensaje" class="form-control" rows="5" cols="50" maxlength="255" required></textarea>
 										</div>
 									</div> <br><br> 
 									<div class="row">
@@ -139,27 +129,9 @@
 										   <input class="btn btn-success" type="submit" value="Enviar Mensaje" />
 										</div>
 									</div>
-									
-								         
 							   </form>
-														
-			
-						
 						</div>
-
-
-
-
-
-
 					</div>
-										  
-											
-										
-										
-										
-						
-
 				</div>
 			</div>
 		<!-- FOOTER -->
