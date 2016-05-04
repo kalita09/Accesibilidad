@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
 	<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 		<link rel="stylesheet" href="http://openlayers.org/en/v3.14.2/css/ol.css" type="text/css">
+		<link rel="stylesheet" href="css/ol3-layerswitcher.css" type="text/css"/>
+		<link rel="stylesheet" href="css/layerswitcher.css" />
 		<!--1. propiedades del mapa-->
 		<style>
 		  .map {
@@ -11,15 +14,29 @@
 		</style>
 		<!--1. Incluir open layers-->
 		<script src="http://openlayers.org/en/v3.14.2/build/ol.js" type="text/javascript"></script>
+
+		
 		<title>OpenLayers 3 example</title>
 	</head>
 	<body>
 		<h2>Montes de Oca</h2>
+		
+		<!--Probando buscador en el mapa-->
+		<div id="form">
+			<input type="text" id="distrito" placeholder="Nombre de Distrito">
+			<!--<button id="buscar" ....el brasileÃ±o lo tiene diferente-->  
+		</div>
+		
 		<!--2. Contenedor de mapa-->
 		<div id="map" class="map"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.14.0/ol.js"></script> <!--Permite que se visualice el cuadro de filtros -->
+	
+		<script type="text/javascript" src="js/ol3-layerswitcher.js"></script> 
 		<script type="text/javascript" src="js/capas.js"></script>
+		<script src="js/layerswitcher.js"></script>
+		
 		<button type="button" onClick="window.location.href='index.php'">
-		<!--Imagen de mapa en png transparente, botón que abre el visor de mapas -->
+		<!--Imagen de mapa en png transparente, botÃ³n que abre el visor de mapas -->
 		<img src="images/flecha.png" width="60" height="50" alt="">	
 		
 	</body>
