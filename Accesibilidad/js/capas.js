@@ -57,9 +57,6 @@ layers : [new ol.layer.Group({'title': 'Mapa visualizado',
 			 })]				 
 
 
-
-
-
 });
 
 
