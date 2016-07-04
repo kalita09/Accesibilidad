@@ -47,7 +47,7 @@ var vista = new ol.View({
   projection: 'EPSG:4326',
   center: [ -84.02171, 9.94246],
   zoom: 13,
-  minZoom: 13,
+  minZoom: 13
   //maxZoom:13 //pueda acercar lo que desee
 });
 var map = new ol.Map({

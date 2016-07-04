@@ -101,7 +101,7 @@
         			$destino="fotos/".$nomfoto;
         			copy ($ruta,$destino);
 
-					$sqldenuncia = "INSERT INTO mensajes (Asunto,Mensaje,foto) VALUES ('$asunto','$mensaje','$destino') ";
+					$sqldenuncia = "INSERT INTO mensajes (asunto,mensaje,foto) VALUES ('$asunto','$mensaje','$destino') ";
 					if ( ! $result = $conexion->query($sqldenuncia))
                             {
                             echo "<a href=index.html>Error al enviar el mensaje intentelo más tarde</a>";
