@@ -1,4 +1,5 @@
 /**
+ *Librería necesaria para el manejo de capas del layerswitcher en openlayer 3
  * OpenLayers 3 Layer Switcher Control.
  * See [the examples](./examples) for usage.
  * @constructor

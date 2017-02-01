@@ -1,3 +1,4 @@
+<!--Lista de mensajes enviados al administrador de la pagina-->
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -100,6 +101,7 @@
 					                            </tr>
 					                        </thead>
 					                        <tbody>
+											<!--Consulta a la base de datos para desplegar-->
 					                            <?php while($row=$resultado->fetch_assoc()){ ?>
 					                                <tr>
 					                                    <td>

@@ -35,7 +35,7 @@
 
 	<body>
 		<?php session_start(); ?>
-
+		<!-- Verifica que sea el administrador para entrar a esta seccion   -->
 		<?php if(isset($_SESSION['Admin'])){ ?>
 			<div class="container">
 				<!-- Barra de navegación -->
@@ -84,11 +84,8 @@
 							<div class="container">
 								<div class="inner cover">
 									<h1 class="cover-heading">TCU Accesibilidad para todos en el cantón de Montes de Oca</h1>
-									<!-- Falta la direccion correcta del js -->
-									<script src="js/layers-accesibilidad.js"></script>
-									<p class="lead">Aquí va el mapa</p>
 									
-										    <!-- Carousel
+										    <!-- Carousel de fotos de pagina de inicio
 											================================================== -->
 											<div id="myCarousel" class="carousel slide" data-ride="carousel">
 											  <!-- Indicators -->

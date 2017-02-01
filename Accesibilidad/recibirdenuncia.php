@@ -92,10 +92,12 @@
 				<div class="cover-container">
 					<div class="container">
 					<?php
+					/*Llamado a la base datos*/
 					include('conexion.php');
 
         			$asunto = $_POST['asunto'];
         			$mensaje = $_POST['mensaje'];
+					/*Existe una carpeta donde se guardan las imagenes, pero en la base de datos solo que guarda la ruta a esa imagen*/
         			$nomfoto =$_FILES["foto"]["name"];
         			$ruta = $_FILES["foto"]["tmp_name"];
         			$destino="fotos/".$nomfoto;

@@ -1,4 +1,5 @@
 <?php
+/*falta completar para su correcto funcionamiento*/
 	include('conexion.php');
 	echo "
 		<form action='forgot_pass.php' method='POST'>

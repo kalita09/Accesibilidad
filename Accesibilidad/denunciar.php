@@ -96,8 +96,7 @@
 					<div class="container">
 					<div class="inner cover">
 							<h1 class="cover-heading">Haga su denuncia</h1>
-							<!-- Falta la direccion correcta del js -->
-							<script src="js/layers-accesibilidad.js"></script>
+						<!-- Formulario donde se reciben datos: asunto, mensaje, imagen-->
 							<form method="post" action="recibirdenuncia.php" name="denuncia" enctype="multipart/form-data" >                
 								 
 									<div class="row">

@@ -1,3 +1,4 @@
+<!--Ver mensajes individualmente-->
 <!DOCTYPE html>
 <html lang="es">
 	<head>

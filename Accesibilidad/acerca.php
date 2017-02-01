@@ -93,18 +93,11 @@
 	</div>
 	<!-- Fin Barra de navegación -->
   
-  
-  
-  
-  
-
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
-
 
           <div class="inner cover">
             <h1 class="cover-heading">Acerca de</h1>

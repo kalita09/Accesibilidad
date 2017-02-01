@@ -1,12 +1,11 @@
-/*
- * Globals
+/*  
+*Esta hoja de estilo fue tomada de una plantilla de ejemplo en la página de bootsrap
  */
 
-/* Links */
 a,
 a:focus,
 a:hover {
-  color: #A4A4A4; /*Letras color negro*/ 
+  color: #A4A4A4; /*Letras color negro del pie de página*/ 
   text-align: left;
 }
 
@@ -29,16 +28,14 @@ a:hover {
 html,
 body {
   height: 100%;
-  
   /*color de fondo de la página*/
-  background-color: #23b2b2;
+  background-color: #fff;
 }
 
 body {
-	
-  color: #fff;/*Color letras fuera de la celda*/
+  color: #000;/*Color letras fuera de la celda alrededor de página*/
   text-align: center;/*texto centrado*/
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: 0 1px 3px rgba(0,0,0,.5); /*Sombra de letras en la barra de menú arriba*/
   padding: 30px;
 }
 

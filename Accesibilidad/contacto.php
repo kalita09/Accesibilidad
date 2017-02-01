@@ -92,31 +92,22 @@
 	</div>
 	</div>
 		<!-- Fin Barra de navegación -->
-  
-  
-  
-  
-  
-  
-
+ 
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
 
-
-
           <div class="inner cover">
             <h1 class="cover-heading">Contacto</h1>
+			<!--Despliega las distintas maneras de contactar con los encargados-->
 			<a href="https://www.facebook.com/MontesdeOcaAccesible"> <img src="images/face.png" width="100" height="100"> </a>
 			<a href="correo.php"> <img src="images/carta.png" width="100" height="100"> </a>
 			<a href="correo.php"> <img src="images/telefono.png" width="100" height="100"> </a>
 			
 			
           </div>
-
-          
 
         </div>
 

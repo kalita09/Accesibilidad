@@ -1,3 +1,4 @@
+<!--Falta completar para su correcto funcionamiento: correo oficial donde se enviara la informacion y del formato del texto a enviar-->
 <!DOCTYPE html>
 <html lang="es">
   <head>

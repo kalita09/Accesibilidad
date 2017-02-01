@@ -6,11 +6,11 @@ echo $usuario;
 echo $contrasena;
 include('conexion.php');
 
-
+/*Consulta a la base de datos*/
 $sqlAdmin = "SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$contrasena' ";
 $admin = $conexion->query($sqlAdmin);
 
-
+/*Verifica que sea un usuario administrador, para desplegar la pagina correspondiente*/
 if($resultadoAdmin= mysqli_fetch_array($admin)){
 	session_start();
 	$_SESSION['Admin']=$usuario;
@@ -21,16 +21,5 @@ if($resultadoAdmin= mysqli_fetch_array($admin)){
 	header('Location: index.php');
 	
 }
-/*
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["Carnet"]. " - Name: " . $row["NombreEstudiante"]. "<br>";
-    }
-} else {
-    echo "0 results";
-}
-$conn->close();*/
-
 
 ?>
